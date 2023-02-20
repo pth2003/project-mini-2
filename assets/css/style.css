@@ -40,12 +40,31 @@
     height: 40px;
     line-height: 40px;
     letter-spacing: 1px;
+    transition: all 0.5s linear;
 }
 .header .inner-header ul li a:hover {
     color: #ff589e;
     text-decoration: none;
 }
 
+@media (max-width : 1199.98px) {
+    .header .inner-header ul {
+        display: none;
+
+    }
+    .header .inner-header .mobile-bar {
+        display: block;
+        position: absolute;
+        top: 23px;
+        right: 40px;
+    }
+    .header .inner-header .mobile-bar i{
+        height: 40px;
+        width: 32px;
+        cursor: pointer;
+        font-size: 32px;
+    }
+}
 @media (max-width : 991.98px) {
     .header .inner-header ul {
         display: none;
